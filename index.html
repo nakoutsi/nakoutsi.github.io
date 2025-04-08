@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Name</h1>
+        <div class="topics">
+            <div class="topic" onclick="toggleContent('academic')">Academic Journey</div>
+            <div class="topic" onclick="toggleContent('stories')">Stories</div>
+            <div class="topic" onclick="toggleContent('projects')">Projects</div>
+        </div>
+        <div id="academic" class="content">
+            <h2>Academic Journey</h2>
+            <p>Here’s my academic story: I studied at [School Name], worked on [Project], etc.</p>
+        </div>
+        <div id="stories" class="content">
+            <h2>Stories</h2>
+            <p>Once upon a time, I went on an adventure...</p>
+        </div>
+        <div id="projects" class="content">
+            <h2>Projects</h2>
+            <p>Check out my project: <a href="https://github.com/yourusername">GitHub Link</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
