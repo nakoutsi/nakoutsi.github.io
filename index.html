@@ -8,24 +8,43 @@
 </head>
 <body>
     <div class="page-bg"></div>
+
     <main class="site">
         <header class="hero">
-            <button id="languageToggle" class="lang-btn" type="button" aria-label="Switch language">English</button>
-            <div class="logo" aria-label="Logo placeholder">
+            <button id="languageToggle" 
+                    class="lang-btn" 
+                    type="button" 
+                    aria-label="Toggle language">
+                Ελληνικά
+            </button>
+
+            <div class="logo" aria-label="Logo">
                 <span>PN</span>
             </div>
+
             <p id="logoHint" class="logo-hint"></p>
+
             <h1 id="name"></h1>
             <p id="title" class="title"></p>
             <p id="intro" class="intro"></p>
+
             <div class="cta-row">
-                <a class="cta-btn" href="https://github.com/nakoutsi" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="cta-btn" 
+                   href="https://github.com/nakoutsi" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   GitHub
+                </a>
             </div>
         </header>
 
         <section class="cards-section" aria-label="Profile sections">
             <h2 id="sectionsTitle"></h2>
-            <div id="cards" class="cards" role="tablist" aria-label="Profile section tabs"></div>
+            <div id="cards" 
+                 class="cards" 
+                 role="tablist" 
+                 aria-label="Profile section tabs">
+            </div>
         </section>
 
         <section id="details" class="details" aria-live="polite">
@@ -33,8 +52,7 @@
             <div id="detailsContent"></div>
         </section>
 
-
-        <section class="ai-note-section" aria-label="AI note">
+        <section class="ai-note-section" aria-label="AI disclosure note">
             <p id="aiNote" class="ai-note"></p>
         </section>
     </main>
