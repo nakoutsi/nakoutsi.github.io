@@ -11,7 +11,7 @@ const profile = {
         sectionsAria: "Profile sections",
         ctaGithub: "GitHub Profile",
         ctaHelp: "Get Help",
-        aiNote: "* This site was made using OpenAI LLM and Codex — I speak fluent AI 🤪. If you're okay with that (and with me as a vibe lifer), just contact me and I'll help you ASAP.",
+        aiNote: "* Built with AI, Driven by Structure. This site was built using OpenAI LLMs and Codex. I speak fluent AI 🤖 If you're okay with that — and with me being a bit of a vibe-lifer — just reach out and I’ll help you ASAP.",
         sections: [
             {
                 id: "about",
@@ -130,7 +130,7 @@ const profile = {
         sectionsAria: "Ενότητες προφίλ",
         ctaGithub: "Προφίλ GitHub",
         ctaHelp: "Ζήτα Βοήθεια",
-        aiNote: "* Αυτό το site φτιάχτηκε με OpenAI LLM και Codex — μιλάω άπταιστα AI 🤪. Αν είσαι οκ με αυτό (και με μένα ως vibe lifer), απλά επικοινώνησε μαζί μου και θα σε βοηθήσω ASAP.",
+        aiNote: "*Αυτό το site δημιουργήθηκε με τη βοήθεια των OpenAI LLMs και του Codex. Μιλάω άπταιστα AI 🤖 Αν είσαι οκ με αυτό — και με το ότι είμαι λίγο vibe-lifer — επικοινώνησε μαζί μου και θα σε βοηθήσω άμεσα.",
         sections: [
             {
                 id: "about",
