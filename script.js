@@ -114,6 +114,7 @@ const profile = {
                         <li>Technical consulting for academic needs</li>
                     </ul>
                     <p>Send your request with a short description and I will reply as soon as possible.</p>
+                    <p> petros.r2001@gmail.com 📤 </p>
                 `
             }
         ]
@@ -233,6 +234,7 @@ const profile = {
                         <li>Technical consulting για φοιτητικές ή ακαδημαϊκές ανάγκες</li>
                     </ul>
                     <p>Στείλε μου το αίτημά σου με μια σύντομη περιγραφή και θα σου απαντήσω το συντομότερο δυνατό.</p>
+                    <p> petros.r2001@gmail.com 📤 </p>
                 `
             }
         ]
