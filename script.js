@@ -9,6 +9,7 @@ const profile = {
         intro: "This site presents my academic/research path and serves as a practical reference point for students who need meaningful technical support.",
         sectionsTitle: "Explore",
         sectionsAria: "Profile sections",
+        ctaGithub: "GitHub Profile",
         sections: [
             {
                 id: "about",
@@ -125,6 +126,7 @@ const profile = {
         intro: "Το site παρουσιάζει την ακαδημαϊκή και ερευνητική μου πορεία και λειτουργεί ως σημείο αναφοράς για φοιτητές που χρειάζονται ουσιαστική τεχνική υποστήριξη.",
         sectionsTitle: "Πλοήγηση",
         sectionsAria: "Ενότητες προφίλ",
+        ctaGithub: "Προφίλ GitHub",
         sections: [
             {
                 id: "about",
@@ -241,6 +243,7 @@ const logoHintNode = document.getElementById("logoHint");
 const nameNode = document.getElementById("name");
 const titleNode = document.getElementById("title");
 const introNode = document.getElementById("intro");
+const ctaBtnNode = document.querySelector(".cta-btn");
 const sectionsTitleNode = document.getElementById("sectionsTitle");
 const cardsNode = document.getElementById("cards");
 const detailsTitleNode = document.getElementById("detailsTitle");
@@ -261,6 +264,7 @@ function render() {
     nameNode.textContent = locale.name;
     titleNode.textContent = locale.title;
     introNode.textContent = locale.intro;
+    ctaBtnNode.textContent = locale.ctaGithub;
     sectionsTitleNode.textContent = locale.sectionsTitle;
     cardsNode.setAttribute("aria-label", locale.sectionsAria);
 
@@ -284,6 +288,32 @@ function render() {
     detailsTitleNode.textContent = selected.title;
     detailsContentNode.innerHTML = selected.content;
 }
+
+
+cardsNode.addEventListener("keydown", (event) => {
+    if (!event.target.classList.contains("card")) {
+        return;
+    }
+
+    const locale = profile[currentLang];
+    const currentIndex = locale.sections.findIndex((section) => section.id === activeSectionId);
+
+    if (event.key === "ArrowRight") {
+        const nextIndex = (currentIndex + 1) % locale.sections.length;
+        activeSectionId = locale.sections[nextIndex].id;
+        render();
+        cardsNode.children[nextIndex]?.focus();
+        event.preventDefault();
+    }
+
+    if (event.key === "ArrowLeft") {
+        const prevIndex = (currentIndex - 1 + locale.sections.length) % locale.sections.length;
+        activeSectionId = locale.sections[prevIndex].id;
+        render();
+        cardsNode.children[prevIndex]?.focus();
+        event.preventDefault();
+    }
+});
 
 languageToggle.addEventListener("click", () => {
     currentLang = currentLang === "el" ? "en" : "el";
