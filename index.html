@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nakoutsi</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Petros Nakoutsi | Security • Networking • Systems Architecture</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Nakoutsi</h1>
-        <div class="topics">
-            <div class="topic" onclick="toggleContent('academic')">Academic Journey</div>
-            <div class="topic" onclick="toggleContent('stories')">Stories</div>
-            <div class="topic" onclick="toggleContent('projects')">Projects</div>
-        </div>
-        <div id="academic" class="content">
-            <h2>Academic Journey</h2>
-            <p>Here’s my academic story: I studied at [School Name], worked on [Project], etc.</p>
-        </div>
-        <div id="stories" class="content">
-            <h2>Stories</h2>
-            <p>Once upon a time, I went on an adventure...</p>
-        </div>
-        <div id="projects" class="content">
-            <h2>Projects</h2>
-            <p>Check out my project: <a href="https://github.com/nakoutsi">GitHub Link</a></p>
-        </div>
-    </div>
+    <div class="page-bg"></div>
+    <main class="site">
+        <header class="hero">
+            <button id="languageToggle" class="lang-btn" type="button" aria-label="Switch language">English</button>
+            <div class="logo" aria-label="Logo placeholder">
+                <span>PN</span>
+            </div>
+            <p id="logoHint" class="logo-hint"></p>
+            <h1 id="name"></h1>
+            <p id="title" class="title"></p>
+            <p id="intro" class="intro"></p>
+            <div class="cta-row">
+                <a class="cta-btn" href="https://github.com/nakoutsi" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <button id="helpBtn" class="cta-btn cta-btn-secondary" type="button">Get Help</button>
+            </div>
+        </header>
+
+        <section class="cards-section" aria-label="Profile sections">
+            <h2 id="sectionsTitle"></h2>
+            <div id="cards" class="cards" role="tablist" aria-label="Profile section tabs"></div>
+        </section>
+
+        <section id="details" class="details" aria-live="polite">
+            <h3 id="detailsTitle"></h3>
+            <div id="detailsContent"></div>
+        </section>
+
+
+        <section class="ai-note-section" aria-label="AI note">
+            <p id="aiNote" class="ai-note"></p>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
