@@ -1,23 +1,23 @@
-<!DOCTYPE html>      
-	  <html lang="el">
+<!DOCTYPE html>
+<html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Petros Nakoutsi | Security • Networking • Systems Architecture</title>
+    <title>Petros Nakoutsi | Security • Networking • Systems Architecture</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>    <title>Petros Nakoutsi | Security • Networking • Systems Architecture</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
-	<div class="page-bg"></div>
+    <div class="page-bg"></div>
 
     <main class="site">
         <header class="hero">
-            <button id="languageToggle" class="lang-btn" type="button" aria-label="Switch language">English</button>
+            <button id="languageToggle" class="lang-btn" type="button" aria-label="Switch language">
+                English
+            </button>
 
-            <div class="logo" aria-label="Logo placeholder">
-                <span>PN</span>
+            <div class="logo">
+                <img src="./logoio.png" alt="Site Logo" class="site-logo">
             </div>
 
             <p id="logoHint" class="logo-hint"></p>
@@ -26,14 +26,22 @@
             <p id="intro" class="intro"></p>
 
             <div class="cta-row">
-                <a id="githubBtn" class="cta-btn" href="https://github.com/nakoutsi" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <button id="helpBtn" class="cta-btn cta-btn-secondary" type="button">Get Help</button>
+                <a id="githubBtn" class="cta-btn"
+                   href="https://github.com/nakoutsi"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   GitHub
+                </a>
+
+                <button id="helpBtn" class="cta-btn cta-btn-secondary" type="button">
+                    Get Help
+                </button>
             </div>
         </header>
 
         <section class="cards-section" aria-label="Profile sections">
             <h2 id="sectionsTitle"></h2>
-            <div id="cards" class="cards" role="tablist" aria-label="Profile section tabs"></div>
+            <div id="cards" class="cards" role="tablist"></div>
         </section>
 
         <section id="details" class="details" aria-live="polite">
@@ -41,7 +49,7 @@
             <div id="detailsContent"></div>
         </section>
 
-        <section class="ai-note-section" aria-label="AI disclosure note">
+        <section class="ai-note-section">
             <p id="aiNote" class="ai-note"></p>
         </section>
     </main>
