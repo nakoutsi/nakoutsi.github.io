@@ -10,7 +10,7 @@ const profile = {
         sectionsTitle: "Explore",
         sectionsAria: "Profile sections",
         ctaGithub: "GitHub Profile",
-        aiNote: "This site was made using OpenAI LLM and Codex — I speak fluent AI 🤖. If you're okay with that (and with me as a vibe lifer), just contact me and I'll help you ASAP.",
+        aiNote: "This site was built using OpenAI’s LLMs and Codex. I speak fluent AI 🤖. If you're cool with that, and with me being a bit of a vibe-lifer — just reach out and I’ll help you as soon as possible.",
         sections: [
             {
                 id: "about",
