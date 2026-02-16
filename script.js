@@ -79,7 +79,7 @@ const profile = {
                 subtitle: "How I support students",
                 content: `
                     <ul>
-                        <li>Support for theses and academic projects in security & networking</li>
+                        <li>Support for theses and academic projects in security & networking (and everything else except coding)</li>
                         <li>Design and implementation of lab environments</li>
                         <li>Attack and defense mechanism analysis</li>
                         <li>Windows and Linux security architecture guidance</li>
@@ -196,7 +196,7 @@ const profile = {
                 subtitle: "Πώς βοηθάω φοιτητές",
                 content: `
                     <ul>
-                        <li>Βοήθεια σε διπλωματικές και ακαδημαϊκές εργασίες σε security & networking</li>
+                        <li>Βοήθεια σε διπλωματικές και ακαδημαϊκές εργασίες σε security & networking (και ό,τι άλλο εκτός κώδικα)</li>
                         <li>Σχεδιασμό και υλοποίηση lab environments</li>
                         <li>Ανάλυση επιθέσεων και αμυντικών μηχανισμών</li>
                         <li>Καθοδήγηση σε Windows και Linux security architecture</li>
