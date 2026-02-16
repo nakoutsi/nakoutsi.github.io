@@ -57,12 +57,14 @@ body {
     font-weight: 600;
 }
 
-.lang-btn:hover {
+.lang-btn:hover,
+.lang-btn:focus-visible {
     border-color: var(--accent);
+    outline: none;
 }
 
 .logo {
-    margin: 1.2rem auto;
+    margin: 1.2rem auto 0.55rem;
     width: 96px;
     height: 96px;
     border-radius: 50%;
@@ -74,6 +76,12 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+.logo-hint {
+    margin: 0 0 0.65rem;
+    color: var(--muted);
+    font-size: 0.9rem;
 }
 
 h1 {
@@ -94,6 +102,28 @@ h1 {
     line-height: 1.6;
 }
 
+.cta-row {
+    margin-top: 1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    padding: 0.55rem 1rem;
+    color: var(--text);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.04);
+    font-weight: 600;
+}
+
+.cta-btn:hover,
+.cta-btn:focus-visible {
+    border-color: var(--accent);
+    background: rgba(84, 208, 255, 0.12);
+    outline: none;
+}
+
 .cards-section {
     margin-top: 2.25rem;
 }
@@ -105,7 +135,7 @@ h1 {
 .cards {
     display: grid;
     gap: 0.9rem;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .card {
@@ -121,10 +151,12 @@ h1 {
 }
 
 .card:hover,
-.card.active {
+.card.active,
+.card:focus-visible {
     transform: translateY(-3px);
     border-color: var(--accent);
     background: rgba(84, 208, 255, 0.12);
+    outline: none;
 }
 
 .card-title {
@@ -144,6 +176,7 @@ h1 {
     border-radius: 14px;
     padding: 1.2rem;
     background: rgba(255, 255, 255, 0.04);
+    animation: fadeIn 0.2s ease;
 }
 
 .details h3 {
@@ -158,6 +191,39 @@ h1 {
 
 .details ul {
     margin: 0.35rem 0 1rem 1.15rem;
+}
+
+.details blockquote {
+    margin: 0.6rem 0 0.9rem;
+    border-left: 3px solid var(--accent);
+    padding-left: 0.8rem;
+    color: #ebebeb;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(2px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ai-note-section {
+    margin-top: 1.1rem;
+    border: 1px dashed rgba(84, 208, 255, 0.45);
+    border-radius: 12px;
+    background: rgba(84, 208, 255, 0.06);
+    padding: 0.9rem 1rem;
+}
+
+.ai-note {
+    margin: 0;
+    color: #e9f9ff;
+    line-height: 1.6;
+    font-size: 0.96rem;
 }
 
 @media (max-width: 620px) {
