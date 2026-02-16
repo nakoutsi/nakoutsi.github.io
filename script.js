@@ -26,9 +26,9 @@ const profile = {
             {
                 id: "thesis",
                 title: "Thesis (Ongoing)",
-                subtitle: "Windows Server security evolution (2012-2025)",
+                subtitle: "Windows Server security evolution (2012–2025)",
                 content: `
-                    <p><strong>Evolution of Security Features in Windows Servers (2012-2025) and Analysis of Version-Specific Attack Behavior</strong></p>
+                    <p><strong>Evolution of Security Features in Windows Servers (2012–2025) and Analysis of Version-Specific Attack Behavior</strong></p>
                     <ul>
                         <li>Security feature mapping across versions</li>
                         <li>Architectural logic behind each feature</li>
@@ -145,9 +145,9 @@ const profile = {
             {
                 id: "thesis",
                 title: "Διπλωματική (Σε εξέλιξη)",
-                subtitle: "Εξέλιξη ασφάλειας Windows Server (2012-2025)",
+                subtitle: "Εξέλιξη ασφάλειας Windows Server (2012–2025)",
                 content: `
-                    <p><strong>Evolution of Security Features in Windows Servers (2012-2025) and Analysis of Version-Specific Attack Behavior</strong></p>
+                    <p><strong>Evolution of Security Features in Windows Servers (2012–2025) and Analysis of Version-Specific Attack Behavior</strong></p>
                     <ul>
                         <li>Χαρτογράφηση security features ανά έκδοση</li>
                         <li>Ανάλυση της αρχιτεκτονικής λογικής κάθε feature</li>
@@ -277,26 +277,32 @@ function render() {
     cardsNode.setAttribute("aria-label", locale.sectionsAria);
 
     cardsNode.innerHTML = "";
+
     locale.sections.forEach((section) => {
         const isActive = section.id === activeSectionId;
+
         const card = document.createElement("button");
         card.className = `card ${isActive ? "active" : ""}`;
         card.type = "button";
         card.setAttribute("role", "tab");
         card.setAttribute("aria-selected", String(isActive));
-        card.innerHTML = `<span class="card-title">${section.title}</span><span class="card-subtitle">${section.subtitle}</span>`;
+        card.innerHTML = `
+            <span class="card-title">${section.title}</span>
+            <span class="card-subtitle">${section.subtitle}</span>
+        `;
+
         card.addEventListener("click", () => {
             activeSectionId = section.id;
             render();
         });
+
         cardsNode.appendChild(card);
     });
 
-    const selected = locale.sections.find((section) => section.id === activeSectionId) || locale.sections[0];
+    const selected = locale.sections.find((s) => s.id === activeSectionId) || locale.sections[0];
     detailsTitleNode.textContent = selected.title;
     detailsContentNode.innerHTML = selected.content;
 }
-
 
 cardsNode.addEventListener("keydown", (event) => {
     if (!event.target.classList.contains("card")) {
@@ -304,21 +310,21 @@ cardsNode.addEventListener("keydown", (event) => {
     }
 
     const locale = profile[currentLang];
-    const currentIndex = locale.sections.findIndex((section) => section.id === activeSectionId);
+    const currentIndex = locale.sections.findIndex((s) => s.id === activeSectionId);
 
     if (event.key === "ArrowRight") {
-        const nextIndex = (currentIndex + 1) % locale.sections.length;
-        activeSectionId = locale.sections[nextIndex].id;
+        const next = (currentIndex + 1) % locale.sections.length;
+        activeSectionId = locale.sections[next].id;
         render();
-        cardsNode.children[nextIndex]?.focus();
+        cardsNode.children[next]?.focus();
         event.preventDefault();
     }
 
     if (event.key === "ArrowLeft") {
-        const prevIndex = (currentIndex - 1 + locale.sections.length) % locale.sections.length;
-        activeSectionId = locale.sections[prevIndex].id;
+        const prev = (currentIndex - 1 + locale.sections.length) % locale.sections.length;
+        activeSectionId = locale.sections[prev].id;
         render();
-        cardsNode.children[prevIndex]?.focus();
+        cardsNode.children[prev]?.focus();
         event.preventDefault();
     }
 });

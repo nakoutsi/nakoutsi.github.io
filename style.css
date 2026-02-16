@@ -207,22 +207,23 @@ h1 {
     margin: 0.35rem 0 1rem 1.15rem;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(2px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .details blockquote {
     margin: 0.6rem 0 0.9rem;
     border-left: 3px solid var(--accent);
     padding-left: 0.8rem;
     color: #ebebeb;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(2px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .ai-note-section {
