@@ -3,7 +3,6 @@ const profile = {
         htmlLang: "en",
         toggleLabel: "Ελληνικά",
         toggleAria: "Switch language to Greek",
-        logoHint: "Your logo can be added here any time.",
         name: "Petros Nakoutsi",
         title: "Information & Communication Systems Engineer | Security • Networking • Systems Architecture",
         intro: "This site presents my academic/research path and serves as a practical reference point for students who need meaningful technical support.",
@@ -48,10 +47,8 @@ const profile = {
                     <ul>
                         <li>Network Security Architecture</li>
                         <li>Windows Internals & Server Security</li>
-                        <li>Wireless Security</li>
                         <li>Attack Surface Analysis</li>
                         <li>Secure System Design</li>
-                        <li>Identity & Access Control</li>
                     </ul>
                     <p><strong>Beyond Engineering</strong></p>
                     <ul>
@@ -123,7 +120,6 @@ const profile = {
         htmlLang: "el",
         toggleLabel: "English",
         toggleAria: "Switch language to English",
-        logoHint: "Το λογότυπο μπορεί να προστεθεί εδώ όποτε το στείλεις.",
         name: "Petros Nakoutsi",
         title: "Μηχανικός Πληροφοριακών και Επικοινωνιακών Συστημάτων | Security • Networking • Systems Architecture",
         intro: "Το site παρουσιάζει την ακαδημαϊκή και ερευνητική μου πορεία και λειτουργεί ως σημείο αναφοράς για φοιτητές που χρειάζονται ουσιαστική τεχνική υποστήριξη.",
@@ -168,10 +164,8 @@ const profile = {
                     <ul>
                         <li>Network Security Architecture</li>
                         <li>Windows Internals & Server Security</li>
-                        <li>Wireless Security</li>
                         <li>Attack Surface Analysis</li>
                         <li>Secure System Design</li>
-                        <li>Identity & Access Control</li>
                     </ul>
                     <p><strong>Beyond Engineering</strong></p>
                     <ul>
