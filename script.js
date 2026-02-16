@@ -11,7 +11,7 @@ const profile = {
         sectionsAria: "Profile sections",
         ctaGithub: "GitHub Profile",
         ctaHelp: "Get Help",
-        aiNote: "* Built with AI, Powered by Curiosity. This site was built using OpenAI’s LLMs and Codex. I speak fluent AI 🤖 If you're cool with that — and with me being a bit of a vibe-lifer — just reach out and I’ll help you as soon as possible.",
+        aiNote: "* This site was made using OpenAI LLM and Codex — I speak fluent AI 🤪. If you're okay with that (and with me as a vibe lifer), just contact me and I'll help you ASAP.",
         sections: [
             {
                 id: "about",
@@ -118,7 +118,6 @@ const profile = {
             }
         ]
     },
-
     el: {
         htmlLang: "el",
         toggleLabel: "English",
@@ -131,7 +130,7 @@ const profile = {
         sectionsAria: "Ενότητες προφίλ",
         ctaGithub: "Προφίλ GitHub",
         ctaHelp: "Ζήτα Βοήθεια",
-        aiNote: "* Αυτό το site δημιουργήθηκε με τη βοήθεια των OpenAI LLMs και του Codex. Μιλάω άπταιστα AI 🤖 Αν είσαι οκ με αυτό και με το ότι είμαι λίγο vibe-lifer — επικοινώνησε μαζί μου και θα σε βοηθήσω το συντομότερο δυνατό.",
+        aiNote: "* Αυτό το site φτιάχτηκε με OpenAI LLM και Codex — μιλάω άπταιστα AI 🤪. Αν είσαι οκ με αυτό (και με μένα ως vibe lifer), απλά επικοινώνησε μαζί μου και θα σε βοηθήσω ASAP.",
         sections: [
             {
                 id: "about",
@@ -142,6 +141,99 @@ const profile = {
                     <p>Η ερευνητική μου κατεύθυνση εστιάζει στην κυβερνοασφάλεια, στα δίκτυα και στην αρχιτεκτονική συστημάτων. Με ενδιαφέρει η κατανόηση τεχνολογιών σε επίπεδο μηχανισμού: πώς σχεδιάστηκαν, ποιο πρόβλημα λύνουν και πώς αποτυγχάνουν.</p>
                     <p>Στόχος του site είναι να παρουσιάζει τη δουλειά μου και να αποτελεί σημείο αναφοράς για φοιτητές με εργασίες σε τεχνικά αντικείμενα.</p>
                 `
+            },
+            {
+                id: "thesis",
+                title: "Διπλωματική (Σε εξέλιξη)",
+                subtitle: "Εξέλιξη ασφάλειας Windows Server (2012–2025)",
+                content: `
+                    <p><strong>Evolution of Security Features in Windows Servers (2012–2025) and Analysis of Version-Specific Attack Behavior</strong></p>
+                    <ul>
+                        <li>Χαρτογράφηση security features ανά έκδοση</li>
+                        <li>Ανάλυση της αρχιτεκτονικής λογικής κάθε feature</li>
+                        <li>Συσχέτιση features με γνωστές τεχνικές επίθεσης</li>
+                        <li>Μελέτη version-specific attack behavior</li>
+                        <li>Κατανόηση του πώς η αμυντική αρχιτεκτονική επηρεάζει τη στρατηγική του επιτιθέμενου</li>
+                    </ul>
+                    <p>Η προσέγγιση εξετάζει πώς μεταβάλλεται το attack surface σε κάθε νέα έκδοση.</p>
+                `
+            },
+            {
+                id: "interests",
+                title: "Ερευνητικά Ενδιαφέροντα",
+                subtitle: "Ακαδημαϊκά και προσωπικά",
+                content: `
+                    <p><strong>Academic / Technical</strong></p>
+                    <ul>
+                        <li>Network Security Architecture</li>
+                        <li>Windows Internals & Server Security</li>
+                        <li>Wireless Security</li>
+                        <li>Attack Surface Analysis</li>
+                        <li>Secure System Design</li>
+                        <li>Identity & Access Control</li>
+                    </ul>
+                    <p><strong>Beyond Engineering</strong></p>
+                    <ul>
+                        <li>Μουσική</li>
+                        <li>Επιχειρηματικότητα & τεχνολογικά startups</li>
+                        <li>Bouldering</li>
+                        <li>Ποιοτικός χρόνος με καλή παρέα</li>
+                    </ul>
+                `
+            },
+            {
+                id: "projects",
+                title: "Projects & Μαθήματα",
+                subtitle: "Εφαρμοσμένη δουλειά σε security και networking",
+                content: `
+                    <ul>
+                        <li><strong>Low-Level Static Analysis of Smart Home Applications:</strong> ανάλυση 12 εφαρμογών με MobSF, permission/network security checks, dangerous CWEs, trackers, και αναλυτική τεχνική αναφορά.</li>
+                        <li><strong>Social Engineering & Privacy Risks:</strong> ανθρώπινος παράγοντας στην κυβερνοασφάλεια, γνωστικές αδυναμίες και behavioral patterns.</li>
+                        <li><strong>Linux Server Hardening & Security Implementation:</strong> access control policies, user/permission management, kernel hardening, logging/monitoring και surface reduction.</li>
+                        <li><strong>SSID Confusion Attack Analysis:</strong> μελέτη εφικτότητας σε Raspberry Pi και ανάλυση roaming/network identification.</li>
+                        <li><strong>WPA Network Fuzzing:</strong> χρήση WPAXFuzz για έλεγχο ανθεκτικότητας access points σε malformed management frames.</li>
+                    </ul>
+                `
+            },
+            {
+                id: "offer",
+                title: "Τι προσφέρω",
+                subtitle: "Πώς βοηθάω φοιτητές",
+                content: `
+                    <ul>
+                        <li>Βοήθεια σε διπλωματικές και ακαδημαϊκές εργασίες σε security & networking</li>
+                        <li>Σχεδιασμό και υλοποίηση lab environments</li>
+                        <li>Ανάλυση επιθέσεων και αμυντικών μηχανισμών</li>
+                        <li>Καθοδήγηση σε Windows και Linux security architecture</li>
+                        <li>Mentoring σε hands-on projects</li>
+                    </ul>
+                    <p>Η προσέγγισή μου βασίζεται σε κατανόηση μηχανισμών και όχι σε αποστήθιση εργαλείων.</p>
+                `
+            },
+            {
+                id: "students",
+                title: "Για Φοιτητές",
+                subtitle: "Τεχνική υποστήριξη & consulting",
+                content: `
+                    <p>Αν είσαι φοιτητής οποιασδήποτε σχολής και χρειάζεσαι βοήθεια σε τεχνικό κομμάτι — ανεξαρτήτως επιπέδου δυσκολίας — μπορώ να σε υποστηρίξω.</p>
+                    <p><strong>Παραδείγματα:</strong></p>
+                    <blockquote>«Σπουδάζω Ψυχολογία και κάνω έρευνα αλλά δεν ξέρω πώς να στήσω σωστά ένα Google Form.»</blockquote>
+                    <ul>
+                        <li>«Πώς οργανώνονται τα δεδομένα;»</li>
+                        <li>«Πώς γίνεται η στατιστική επεξεργασία;»</li>
+                        <li>«Πώς προκύπτουν τα γραφήματα;»</li>
+                        <li>«Πώς παρουσιάζω σωστά τα αποτελέσματα;»</li>
+                    </ul>
+                    <p><strong>Ή γενικότερα:</strong></p>
+                    <ul>
+                        <li>Σχεδιασμός και υλοποίηση ερευνητικών εργαλείων</li>
+                        <li>Δομή και ανάλυση δεδομένων</li>
+                        <li>Τεχνική υποστήριξη για εργασίες</li>
+                        <li>Καθοδήγηση σε projects</li>
+                        <li>Technical consulting για φοιτητικές ή ακαδημαϊκές ανάγκες</li>
+                    </ul>
+                    <p>Στείλε μου το αίτημά σου με μια σύντομη περιγραφή και θα σου απαντήσω το συντομότερο δυνατό.</p>
+                `
             }
         ]
     }
@@ -149,6 +241,7 @@ const profile = {
 
 let currentLang = "el";
 let activeSectionId = "about";
+const REQUIRED_SECTION_IDS = ["about", "thesis", "interests", "projects", "offer", "students"];
 
 const languageToggle = document.getElementById("languageToggle");
 const logoHintNode = document.getElementById("logoHint");
@@ -160,16 +253,72 @@ const helpBtnNode = document.getElementById("helpBtn");
 const aiNoteNode = document.getElementById("aiNote");
 const sectionsTitleNode = document.getElementById("sectionsTitle");
 const cardsNode = document.getElementById("cards");
+const detailsNode = document.getElementById("details");
 const detailsTitleNode = document.getElementById("detailsTitle");
 const detailsContentNode = document.getElementById("detailsContent");
 
-function render() {
-    const locale = profile[currentLang];
-    const existingIds = locale.sections.map((section) => section.id);
+function getLocale() {
+    const fallbackLocale = profile.el;
+    const locale = profile[currentLang] || fallbackLocale;
+    const sectionById = new Map(locale.sections.map((section) => [section.id, section]));
 
-    if (!existingIds.includes(activeSectionId)) {
+    const normalizedSections = REQUIRED_SECTION_IDS.map((id) => {
+        const localized = sectionById.get(id);
+
+        if (localized) {
+            return localized;
+        }
+
+        const fallbackSection = fallbackLocale.sections.find((section) => section.id === id);
+        return fallbackSection || locale.sections[0];
+    }).filter(Boolean);
+
+    return {
+        ...locale,
+        sections: normalizedSections
+    };
+}
+
+function getSafeActiveSection(locale) {
+    const validIds = locale.sections.map((section) => section.id);
+
+    if (!validIds.includes(activeSectionId)) {
         activeSectionId = locale.sections[0].id;
     }
+
+    return locale.sections.find((section) => section.id === activeSectionId) || locale.sections[0];
+}
+
+function renderCards(locale) {
+    cardsNode.innerHTML = "";
+
+    locale.sections.forEach((section) => {
+        const isActive = section.id === activeSectionId;
+
+        const card = document.createElement("button");
+        card.className = `card ${isActive ? "active" : ""}`;
+        card.type = "button";
+        card.setAttribute("role", "tab");
+        card.setAttribute("aria-selected", String(isActive));
+        card.setAttribute("aria-controls", "details");
+        card.dataset.sectionId = section.id;
+        card.innerHTML = `
+            <span class="card-title">${section.title}</span>
+            <span class="card-subtitle">${section.subtitle}</span>
+        `;
+
+        card.addEventListener("click", () => {
+            activeSectionId = section.id;
+            render();
+        });
+
+        cardsNode.appendChild(card);
+    });
+}
+
+function render() {
+    const locale = getLocale();
+    const selectedSection = getSafeActiveSection(locale);
 
     document.documentElement.lang = locale.htmlLang;
     languageToggle.textContent = locale.toggleLabel;
@@ -184,39 +333,19 @@ function render() {
     sectionsTitleNode.textContent = locale.sectionsTitle;
     cardsNode.setAttribute("aria-label", locale.sectionsAria);
 
-    cardsNode.innerHTML = "";
+    renderCards(locale);
 
-    locale.sections.forEach((section) => {
-        const isActive = section.id === activeSectionId;
-
-        const card = document.createElement("button");
-        card.className = `card ${isActive ? "active" : ""}`;
-        card.type = "button";
-        card.setAttribute("role", "tab");
-        card.setAttribute("aria-selected", String(isActive));
-        card.innerHTML = `
-            <span class="card-title">${section.title}</span>
-            <span class="card-subtitle">${section.subtitle}</span>
-        `;
-
-        card.addEventListener("click", () => {
-            activeSectionId = section.id;
-            render();
-        });
-
-        cardsNode.appendChild(card);
-    });
-
-    const selected = locale.sections.find((s) => s.id === activeSectionId) || locale.sections[0];
-    detailsTitleNode.textContent = selected.title;
-    detailsContentNode.innerHTML = selected.content;
+    detailsTitleNode.textContent = selectedSection.title;
+    detailsContentNode.innerHTML = selectedSection.content;
 }
 
 cardsNode.addEventListener("keydown", (event) => {
-    if (!event.target.classList.contains("card")) return;
+    if (!event.target.classList.contains("card")) {
+        return;
+    }
 
-    const locale = profile[currentLang];
-    const currentIndex = locale.sections.findIndex((s) => s.id === activeSectionId);
+    const locale = getLocale();
+    const currentIndex = locale.sections.findIndex((section) => section.id === activeSectionId);
 
     if (event.key === "ArrowRight") {
         const next = (currentIndex + 1) % locale.sections.length;
@@ -233,12 +362,29 @@ cardsNode.addEventListener("keydown", (event) => {
         cardsNode.children[prev]?.focus();
         event.preventDefault();
     }
+
+    if (event.key === "Home") {
+        activeSectionId = locale.sections[0].id;
+        render();
+        cardsNode.children[0]?.focus();
+        event.preventDefault();
+    }
+
+    if (event.key === "End") {
+        const lastIndex = locale.sections.length - 1;
+        activeSectionId = locale.sections[lastIndex].id;
+        render();
+        cardsNode.children[lastIndex]?.focus();
+        event.preventDefault();
+    }
 });
 
 helpBtnNode.addEventListener("click", () => {
-    activeSectionId = "students";
+    const locale = getLocale();
+    const studentsSection = locale.sections.find((section) => section.id === "students");
+    activeSectionId = studentsSection ? "students" : locale.sections[0].id;
     render();
-    document.getElementById("details").scrollIntoView({ behavior: "smooth", block: "start" });
+    detailsNode.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 languageToggle.addEventListener("click", () => {
@@ -247,3 +393,18 @@ languageToggle.addEventListener("click", () => {
 });
 
 render();
+
+function validateLocaleConsistency() {
+    const locales = Object.entries(profile);
+
+    locales.forEach(([localeKey, locale]) => {
+        const sectionIds = locale.sections.map((section) => section.id);
+        const missing = REQUIRED_SECTION_IDS.filter((id) => !sectionIds.includes(id));
+
+        if (missing.length > 0) {
+            console.warn(`Locale '${localeKey}' is missing sections: ${missing.join(", ")}`);
+        }
+    });
+}
+
+validateLocaleConsistency();
