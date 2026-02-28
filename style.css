@@ -273,3 +273,38 @@ h1 {
         padding-top: 0;
     }
 }
+.startup-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.startup-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(84, 208, 255, 0.4);
+}
+
+.startup-badge {
+    background: linear-gradient(90deg, #54d0ff, #8f6bff);
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.startup-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.startup-link:hover {
+    text-decoration: underline;
+}
