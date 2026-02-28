@@ -204,6 +204,11 @@ h1 {
     font-size: 0.95rem;
 }
 
+.card-startup {
+    border-color: #8f6bff;
+    box-shadow: 0 0 15px rgba(143, 107, 255, 0.25);
+}
+
 .details {
     margin-top: 1.5rem;
     border: 1px solid var(--card-border);
@@ -306,5 +311,15 @@ h1 {
 }
 
 .startup-link:hover {
+    text-decoration: underline;
+}
+
+.email-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.email-link:hover {
     text-decoration: underline;
 }
