@@ -277,7 +277,7 @@ const profile = {
                     <img src="aroundu-logo.png" alt="AroundU Logo" class="startup-logo">
                     <span class="startup-badge">Co-Founder</span>
                     </div>
-                     <p><strong>Το AroundU</strong> είναι μια location-based πλατφόρμα ανακάλυψης εκδηλώσεων που λύνει το πρόβλημα «Tι έχει σήμερα; και κυρίως το πρόβλημα της αποσπασματικής διαφήμισης».</p>
+                     <p><strong>Το AroundU</strong> είναι μια location-based πλατφόρμα ανακάλυψης εκδηλώσεων που λύνει το πρόβλημα «Tι έχει σήμερα;» και κυρίως το πρόβλημα της αποσπασματικής διαφήμισης.</p>
 
                      <ul>
                         <li>Συνιδρυτής & Product Architect</li>
