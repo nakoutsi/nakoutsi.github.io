@@ -111,8 +111,40 @@ const profile = {
                         <li>Technical consulting for academic needs</li>
                     </ul>
                     <p>Send your request with a short description and I will reply as soon as possible.</p>
-                    <p> petros.r2001@gmail.com 📤 </p>
+                    <p>
+                         <a href="mailto:petros.r2001@gmail.com?subject=Help Request&body=Hi Petros,"
+                         class="email-link">
+                         petros.r2001@gmail.com
+                         </a>
+                    </p>
                 `
+            },
+            {
+                id: "aroundu",
+                title: "Startup • AroundU",
+                subtitle: "Co-Founder & Product Architecture",
+                content: `
+                    <div class="startup-header">
+                    <img src="aroundu-logo.png" alt="AroundU Logo" class="startup-logo">
+                    <span class="startup-badge">Co-Founder</span>
+                    </div>
+                    <p><strong>AroundU</strong> is a location-based events discovery platform designed to solve the “What’s happening today?” and the fragmented advertising problem.</p>
+
+                    <ul>
+                        <li>Co-Founder & Product Architect</li>
+                        <li>LLM-assisted development (Base44, structured prompting)</li>
+                        <li>Full mobile/web application architecture design</li>
+                        <li>B2B monetization strategy & subscription logic</li>
+                        <li>UI/UX design iteration & product validation</li>
+                    </ul>
+
+                    <p>The project demonstrates my ability to design, structure and deploy production-level systems using AI-augmented workflows while maintaining architectural control.</p>
+                    <a href="https://aroundu.gr"
+                    target="_blank"
+                    class="startup-link">
+                    Visit AroundU →
+                   </a>
+                    `
             }
         ]
     },
@@ -228,8 +260,40 @@ const profile = {
                         <li>Technical consulting για φοιτητικές ή ακαδημαϊκές ανάγκες</li>
                     </ul>
                     <p>Στείλε μου το αίτημά σου με μια σύντομη περιγραφή και θα σου απαντήσω το συντομότερο δυνατό.</p>
-                    <p> petros.r2001@gmail.com 📤 </p>
+                    <p>
+                         <a href="mailto:petros.r2001@gmail.com?subject=Help Request&body=Hi Petros,"
+                         class="email-link">
+                         petros.r2001@gmail.com
+                         </a>
+                    </p>
                 `
+            },
+            {
+                id: "aroundu",
+                title: "Startup • AroundU",
+                subtitle: "Συνιδρυτής & Αρχιτεκτονική Προϊόντος",
+                content: `
+                    <div class="startup-header">
+                    <img src="aroundu-logo.png" alt="AroundU Logo" class="startup-logo">
+                    <span class="startup-badge">Co-Founder</span>
+                    </div>
+                     <p><strong>Το AroundU</strong> είναι μια location-based πλατφόρμα ανακάλυψης εκδηλώσεων που λύνει το πρόβλημα «Tι έχει σήμερα; και κυρίως το πρόβλημα της αποσπασματικής διαφήμισης».</p>
+
+                     <ul>
+                        <li>Συνιδρυτής & Product Architect</li>
+                        <li>LLM-assisted development (Base44, structured prompting)</li>
+                        <li>Σχεδιασμός mobile/web αρχιτεκτονικής</li>
+                        <li>B2B monetization & subscription logic</li>
+                        <li>Συνεχής UI/UX βελτιστοποίηση</li>
+                    </ul>
+
+                    <p>Το project αποδεικνύει ικανότητα σχεδιασμού και υλοποίησης production-level συστημάτων με AI-augmented workflows.</p>
+                    <a href="https://aroundu.gr"
+                    target="_blank"
+                    class="startup-link">
+                    Visit AroundU →
+                   </a>
+                 `
             }
         ]
     }
@@ -237,7 +301,7 @@ const profile = {
 
 let currentLang = "el";
 let activeSectionId = "about";
-const REQUIRED_SECTION_IDS = ["about", "thesis", "interests", "projects", "offer", "students"];
+const REQUIRED_SECTION_IDS = ["about", "thesis", "interests", "projects", "offer", "students", "aroundu" ];
 
 const languageToggle = document.getElementById("languageToggle");
 const logoHintNode = document.getElementById("logoHint");
@@ -292,8 +356,7 @@ function renderCards(locale) {
         const isActive = section.id === activeSectionId;
 
         const card = document.createElement("button");
-        card.className = `card ${isActive ? "active" : ""}`;
-        card.type = "button";
+        card.className = `card ${isActive ? "active" : ""} ${section.id === "aroundu" ? "card-startup" : ""}`;        card.type = "button";
         card.setAttribute("role", "tab");
         card.setAttribute("aria-selected", String(isActive));
         card.setAttribute("aria-controls", "details");
@@ -330,7 +393,7 @@ function render() {
     cardsNode.setAttribute("aria-label", locale.sectionsAria);
 
     renderCards(locale);
-
+    
     detailsTitleNode.textContent = selectedSection.title;
     detailsContentNode.innerHTML = selectedSection.content;
 }
