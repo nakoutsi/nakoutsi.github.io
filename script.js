@@ -388,7 +388,7 @@ function render() {
     introNode.textContent = locale.intro;
     ctaBtnNode.textContent = locale.ctaGithub;
     helpBtnNode.textContent = locale.ctaHelp;
-    aiNoteNode.textContent = locale.aiNote;
+    aiNoteNode.innerHTML = locale.aiNote;
     sectionsTitleNode.textContent = locale.sectionsTitle;
     cardsNode.setAttribute("aria-label", locale.sectionsAria);
 
