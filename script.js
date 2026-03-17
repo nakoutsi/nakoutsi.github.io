@@ -74,21 +74,6 @@ const profile = {
                 `
             },
             {
-                id: "offer",
-                title: "What I Offer",
-                subtitle: "How I support students",
-                content: `
-                    <ul>
-                        <li>Support for theses and academic projects in security & networking (and everything else except coding)</li>
-                        <li>Design and implementation of lab environments</li>
-                        <li>Attack and defense mechanism analysis</li>
-                        <li>Windows and Linux security architecture guidance</li>
-                        <li>Mentoring for hands-on technical projects</li>
-                    </ul>
-                    <p>My approach is mechanism-first understanding, not tool memorization.</p>
-                `
-            },
-            {
                 id: "students",
                 title: "For Students",
                 subtitle: "Technical support & consulting",
@@ -220,21 +205,6 @@ const profile = {
                         <li><strong>SSID Confusion Attack Analysis:</strong> μελέτη εφικτότητας σε Raspberry Pi και ανάλυση roaming/network identification.</li>
                         <li><strong>WPA Network Fuzzing:</strong> χρήση WPAXFuzz για έλεγχο ανθεκτικότητας access points σε malformed management frames.</li>
                     </ul>
-                `
-            },
-            {
-                id: "offer",
-                title: "Τι προσφέρω",
-                subtitle: "Πώς βοηθάω φοιτητές",
-                content: `
-                    <ul>
-                        <li>Βοήθεια σε διπλωματικές και ακαδημαϊκές εργασίες σε security & networking (και ό,τι άλλο εκτός κώδικα)</li>
-                        <li>Σχεδιασμό και υλοποίηση lab environments</li>
-                        <li>Ανάλυση επιθέσεων και αμυντικών μηχανισμών</li>
-                        <li>Καθοδήγηση σε Windows και Linux security architecture</li>
-                        <li>Mentoring σε hands-on projects</li>
-                    </ul>
-                    <p>Η προσέγγισή μου βασίζεται σε κατανόηση μηχανισμών και όχι σε αποστήθιση εργαλείων.</p>
                 `
             },
             {
