@@ -271,7 +271,7 @@ const profile = {
 
 let currentLang = "el";
 let activeSectionId = "about";
-const REQUIRED_SECTION_IDS = ["about", "thesis", "interests", "projects", "offer", "students", "aroundu" ];
+const REQUIRED_SECTION_IDS = ["about", "thesis", "interests", "projects", "students", "aroundu" ];
 
 const languageToggle = document.getElementById("languageToggle");
 const logoHintNode = document.getElementById("logoHint");
